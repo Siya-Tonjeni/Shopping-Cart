@@ -24,6 +24,10 @@ function calculateTotalCost(){
             deliveryEligible.textContent = "You've Earned";
             checkDeliveryFee.textContent = "Free";
         }
+        else if(subTotal == 0){
+            deliveryEligible.textContent = "Cart is empty";
+            checkDeliveryFee.textContent = 0;
+        }
         else{
             totalCost = subTotal + deliveryFee;
             const remainder = 500 - subTotal;

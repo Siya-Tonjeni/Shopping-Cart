@@ -6,13 +6,29 @@
 }
 
 /* Header */
-.p-3{
+header{
+    padding: 1em;
     background-color: #ffe1ef;
+}
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mood-logo{
+    display: flex;
+    margin-bottom: 0.5rem;
+
 }
 .nav{
     font-size: 15px;
     margin-left: 50px;
+    margin-bottom: 0.5rem;
+    justify-content: center;
 
+}
+.nav-link{
+    padding: 0 0.5rem;
 }
 .number{
     display: inline-block;
@@ -55,6 +71,10 @@
 
 /* Cart section */
 
+.the-cart{
+    padding: 3rem 1.5rem;
+}
+
 .delivery-process{
     background-color: #eb9240;
     border-radius: 12px;
@@ -63,7 +83,7 @@
 .breadcrumb {
     display: flex;
     align-items: center;
-    /* width: 80%; */
+    padding: 1rem;
 }
 .breadcrumb li {
     list-style: none;
@@ -75,11 +95,18 @@
     margin-left: auto;
 }
 
+.item-row{
+    padding: 3rem;
+}
+
 .item-box{
     border-radius: 12px;
     border: 1px solid #ffe1ef;
     overflow: hidden;
     position: relative;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .item-bar li{
@@ -95,7 +122,6 @@
 .delete-btn:hover{
     background-color: #ffff !important;
     color: #e33437 !important;
-    /* border-color: #e33437 !important; */
 }
 .wishlist-btn{
     position: relative;
@@ -108,18 +134,16 @@
 }
 
 /* Total Order */
-.sticky-top {
-    position: -webkit-sticky; /* For Safari */
+.total-cart {
+    position: -webkit-sticky;
     position: sticky;
-    top: 20px; /* Adjust based on your needs */
+    top: 20px;
     
 }
 
 .order-table{
     background-color: #ffe1ef;
     border-radius: 10px;
-    /* height: 25%;
-    width: 30%;  */
 }
 .order-table button{
     margin: 20px;
