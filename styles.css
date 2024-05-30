@@ -76,7 +76,10 @@
 }
 
 .item-box{
-    text-align: left;
+    border-radius: 12px;
+    border: 1px solid #ffe1ef;
+    overflow: hidden;
+    position: relative;
 }
 
 .item-bar li{
