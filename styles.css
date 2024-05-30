@@ -129,6 +129,11 @@ header{
     left: 25%;
     width: 50%;
 }
+.wishlist-btn:hover, .button-hover{
+    background-color: #ef93bf !important;
+    color: #ffff !important;
+    border-color: #ef93bf !important;
+}
 .image-item{
     margin: 20px 0 0 20px;
 }

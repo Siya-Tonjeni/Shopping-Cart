@@ -51,9 +51,18 @@ function calculateTotalCost(){
                 cartItem.remove();
                 calculateTotalCost();
             })
-        })
+        });
 
         calculateTotalCost();
+
+        // Wishlist button when it is clicked
+        const wishlistBtn = document.querySelectorAll('.wishlist-btn');
+        
+        wishlistBtn.forEach(button => {
+            button.addEventListener('click', function(){
+                this.classList.toggle('button-hover');
+            });
+        });
     
 
 
