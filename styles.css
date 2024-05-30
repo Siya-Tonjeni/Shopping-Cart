@@ -117,7 +117,7 @@ header{
     height: 34px;
     width: 10%;
     right: -96%;
-    top: -10%;
+    top: -7%;
 }
 .delete-btn:hover{
     background-color: #ffff !important;
@@ -157,7 +157,9 @@ header{
 }
 .total-cost{
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 800;
+
 }
 .btn-primary{
     background-color: #eb9240 !important;
