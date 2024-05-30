@@ -7,7 +7,7 @@ function calculateTotalCost(){
     let totalCost = 0;
     const deliveryEligible = document.getElementById('delivery-eligible');
     const checkDeliveryFee = document.getElementById('check-delivery-fee');
-    let deliveryFee = 0;
+    let deliveryFee = 60;
 
     // Calculate total costs
     iteamPrice.forEach((priceElement, index) => {
@@ -39,6 +39,15 @@ function calculateTotalCost(){
         document.querySelectorAll('.item-quantity').forEach(select =>{
             select.addEventListener('change', calculateTotalCost)
         });
+
+        // EventListener for the delete buttons to delete unwanted cart items
+        document.querySelectorAll('.delete-btn').forEach(button => {
+            button.addEventListener('click', (event) =>{
+                const cartItem = event.target.closest('.item-box');
+                cartItem.remove();
+                calculateTotalCost();
+            })
+        })
 
         calculateTotalCost();
     
